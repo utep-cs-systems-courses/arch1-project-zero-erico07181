@@ -26,3 +26,10 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow(int leftCol, int size){
+
+    int square_col = leftCol + size - 1;
+
+    print_triangle(leftCol, size);
+    print_square(square_col , size);
+}
